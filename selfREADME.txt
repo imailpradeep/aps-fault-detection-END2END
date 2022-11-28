@@ -35,5 +35,7 @@ MAKE GIT-HUB LINK
 30. git push origin main -f to push our files to git hub 
 31. -f was used to 'forcefully' only once as the history was not related but next time onwards no need to use -f
 32. "git add ." enter and 'git commit -m "Added a new file .gitignore"'enter to add new file "git push origin main"
-33. .gitnore has a lsit of file names not uploaded or tracked byt github
+33. .gitignore has a lsit of file names not uploaded or tracked byt github
+34. git -status gives list of files in read which are not synced. so 'git add filename' then 'git commit -m "message"'
+35. 
 
