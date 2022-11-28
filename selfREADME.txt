@@ -34,5 +34,6 @@ MAKE GIT-HUB LINK
 29. git config --global user.email "you@example.com" and git config --global user.name "Your Name", now commit
 30. git push origin main -f to push our files to git hub 
 31. -f was used to 'forcefully' only once as the history was not related but next time onwards no need to use -f
-32. 
+32. "git add ." enter and 'git commit -m "Added a new file .gitignore"'enter to add new file "git push origin main"
+33. .gitnore has a lsit of file names not uploaded or tracked byt github
 
