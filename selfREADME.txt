@@ -28,4 +28,11 @@ MAKE GIT-HUB LINK
 23. 'ls -a' gives a list of all files folders, git log files are saved in folders (cd and cat commands)
 24. when we do a soft or hard reset we need to give the first 4 (or few) characters of the latest previous git log
 25. the Head -> main has been moved to the git which you gave the characters
+26. In Terminal 'git reset --soft 6afd' enter then 'git log' enter to verify then 'git add .' then 'git status'
+27. git commit -m "This is the first version of code"
+28. We get error message since it oes not have our details like email address
+29. git config --global user.email "you@example.com" and git config --global user.name "Your Name", now commit
+30. git push origin main -f to push our files to git hub 
+31. -f was used to 'forcefully' only once as the history was not related but next time onwards no need to use -f
+32. 
 
