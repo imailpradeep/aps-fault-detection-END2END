@@ -1,0 +1,2 @@
+[ 2022-12-01 13:09:17,134 ] 7 root - INFO - Starting test_logger_and_exception in try
+[ 2022-12-01 13:09:17,134 ] 13 root - INFO - division by zero

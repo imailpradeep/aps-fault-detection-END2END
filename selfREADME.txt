@@ -37,5 +37,32 @@ MAKE GIT-HUB LINK
 32. "git add ." enter and 'git commit -m "Added a new file .gitignore"'enter to add new file "git push origin main"
 33. .gitignore has a lsit of file names not uploaded or tracked byt github
 34. git -status gives list of files in read which are not synced. so 'git add filename' then 'git commit -m "message"'
-35. 
+35. lastly 'git push origin main' but if we get error then 'git pull origin main' and if there are conflicts the file will come up in red on left side
+36. click on any red files and accept or reject changes and "git add ." and 'git commit -m "message" and git push again 
+
+37. Make 'sensor' folder and create 'setup.py' file inside it. setup file is necessary for portability 
+38. the find_packages() knows which packages have python in it by looking for __init__.py file 
+39. in the setup file we give information like author name, etc.
+40. in requirements folder insert all the required packages list 
+41. in the setup file now we need to write a function for a list of strings containing the packages list
+42. in requirements.txt every line ends with \n (new line character) and it needs to be removed
+43. also since we need to install our source code as library we need '-e .' in the requirements.txt
+44. -e means editable and . means current folder (such as terminal$ cd ./sensor aand in terminal$ git add .)
+45. but -e . gives error hence we need to remove it from the list to run the rest of the list. -e . triggers setup.py file when running requirements.txt
+46. when we complete the setup.py file and run it then after that pip install -r requirements.txt does not give error
+47. the __init__.py causes sensor folder to be shown in sensor.egg-info/sources.txt but not 'notebook' folder as it does not have it
+48. inside sensor create component folder to store the components of the pipeline line data cleaning, validation, etc.
+49. entity folder is created to store the different outputs of the different predictions and artifacts
+50. __init__.py is to be created it we want to convert the folder to package, helper functions may be required so make utils folder for them
+51. entity folder has config_entity.py for defining inputs and artifact_entity.py for defining outputs
+
+
+52. 'Data Ingestion', 'Data Validation', 'Data Transformation', 'Model Trainer', 'Model Evaluation', 'Model Pusher'.
+53. all the above need config and artifact (input and output), so creatgite class for them in config_entity.py and artifact_entity.py
+54. the ... is same as 'pass' 
+55. inside components folder also we need the six files 
+56. in pipeline folder we add training_pipeline.py to contain files
+57. all programs need logger.py and exception.py
+58. after writing code for logging and exception we can import necessary output to main
+
 
